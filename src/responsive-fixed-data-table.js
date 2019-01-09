@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import { findDOMNode } from 'react-dom';
 import { Table } from 'fixed-data-table';
 import debounce from 'lodash/debounce';
@@ -15,8 +16,8 @@ export default class ResponsiveFixedDataTable extends React.Component {
 	}
 
 	static propTypes = {
-		containerStyle: React.PropTypes.object,
-		refreshRate: React.PropTypes.number
+		containerStyle: PropTypes.object,
+		refreshRate: PropTypes.number
 	};
 
 	static defaultProps = {
